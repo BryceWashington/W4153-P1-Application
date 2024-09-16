@@ -17,7 +17,7 @@ class ServiceFactory(BaseServiceFactory):
         if service_name == 'CourseResource':
             result = course_resource.CourseResource(config=None)
         elif service_name == 'CourseResourceDataService':
-            context = dict(user="root", password="dbuserdbuser",
+            context = dict(user="root", password="vikings11",
                            host="localhost", port=3306)
             data_service = MySQLRDBDataService(context=context)
             result = data_service
